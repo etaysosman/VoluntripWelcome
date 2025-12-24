@@ -338,6 +338,33 @@ html, body {
     display: block;
 }
 
+/* ===== Partners: one logo per row on mobile ===== */
+@media (max-width: 767px) {
+
+    .partners .row {
+        display: flex;
+        flex-direction: column;   /* שורה אחת לכל פריט */
+        row-gap: 32px;            /* רווח אנכי */
+    }
+
+    .partners .row > div {
+        width: 100%;
+        max-width: 100%;
+        min-height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .partners img {
+        max-height: 70px;
+        width: auto;
+        object-fit: contain;
+        transform: none;
+    }
+}
+
+
 
 
         /* ================= FOOTER ================= */
@@ -348,5 +375,6 @@ html, body {
             padding: 25px;
 
         }
+
 
 
