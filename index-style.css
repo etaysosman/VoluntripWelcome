@@ -338,6 +338,17 @@ html, body {
     display: block;
 }
 
+
+        /* ================= FOOTER ================= */
+        footer {
+            background-color: #0b3c5d;
+            color: #ffffff;
+            text-align: center;
+            padding: 25px;
+
+        }
+
+
 /* ===== Partners: one logo per row on mobile ===== */
 @media (max-width: 767px) {
 
@@ -363,18 +374,5 @@ html, body {
         transform: none;
     }
 }
-
-
-
-
-        /* ================= FOOTER ================= */
-        footer {
-            background-color: #0b3c5d;
-            color: #ffffff;
-            text-align: center;
-            padding: 25px;
-
-        }
-
 
 
