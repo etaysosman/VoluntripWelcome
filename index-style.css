@@ -302,43 +302,6 @@ html, body {
             opacity: 1;
         }
 
-/* --- Fix Partners section layout --- */
-
-.partners {
-    padding-bottom: 80px;
-}
-
-.partners .col-6,
-.partners .col-md-3 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.partners img {
-    max-height: 80px;
-    width: auto;
-    object-fit: contain;
-    display: block;
-}
-
-/* === FINAL FIX: Partners overlap === */
-
-.partners .row > div {
-    min-height: 120px;          /* מייצב גובה שורה */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.partners img {
-    max-height: 80px;
-    width: auto;
-    object-fit: contain;
-    display: block;
-}
-
-
         /* ================= FOOTER ================= */
         footer {
             background-color: #0b3c5d;
@@ -347,32 +310,5 @@ html, body {
             padding: 25px;
 
         }
-
-
-/* ===== Partners: one logo per row on mobile ===== */
-@media (max-width: 767px) {
-
-    .partners .row {
-        display: flex;
-        flex-direction: column;   /* שורה אחת לכל פריט */
-        row-gap: 32px;            /* רווח אנכי */
-    }
-
-    .partners .row > div {
-        width: 100%;
-        max-width: 100%;
-        min-height: 100px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .partners img {
-        max-height: 70px;
-        width: auto;
-        object-fit: contain;
-        transform: none;
-    }
-}
 
 
