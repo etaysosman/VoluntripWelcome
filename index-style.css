@@ -1,0 +1,312 @@
+/* הגדרת גובה לכל המסך כדי שהפלקס יעבוד */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif; 
+}
+
+.voluntrip-bg {
+    background-color: #7BC4E6; 
+}
+
+/* עיצוב הלוגו */
+.main-logo {
+    font-family: 'Arial Black', sans-serif; /* פונט עבה */
+    font-size: 4rem;
+    font-weight: bold;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+/* האייקון שמחליף את האות O */
+.logo-icon {
+    height: 50px; /* גודל האייקון בתוך הלוגו */
+    margin: 0 2px;
+}
+
+/* הסלוגן מתחת ללוגו */
+.tagline {
+    font-size: 1.2rem;
+    color: #000;
+    letter-spacing: 1px;
+}
+
+/* עיצוב הכפתורים המיוחד */
+.btn-custom {
+    background-color: #8BD6F7; /* תכלת בהיר יותר */
+    border: 2px solid #ffffff; /* מסגרת לבנה */
+    color: #000;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 0;
+    transition: all 0.3s;
+}
+
+.btn-custom:hover {
+    background-color: #fff;
+    color: #7BC4E6;
+    text-decoration: none;
+}
+
+/* האייקון הקטן בין הכפתורים למטה */
+.small-icon {
+    height: 40px;
+    opacity: 0.9;
+}
+/* --- Login Page Styles --- */
+
+/* שדות הקלט (Input) */
+.custom-input {
+    border-radius: 0; /* פינות ישרות כמו בתמונה */
+    border: 1px solid #aaa;
+    padding: 10px;
+}
+
+/* קישור שכחתי סיסמה */
+.forgot-link {
+    color: blue;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+/* כפתור התחברות - תכלת בהיר */
+.btn-login {
+    background-color: #8BD6F7;
+    border: 1px solid #6FBCE2;
+    color: #000;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.btn-login:hover {
+    background-color: #74C2EB;
+}
+
+/* קו מפריד עם המילה OR באמצע */
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000;
+    font-size: 1.2rem;
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #999;
+}
+
+.separator:not(:empty)::before {
+    margin-right: .5em;
+}
+
+.separator:not(:empty)::after {
+    margin-left: .5em;
+}
+
+/* כפתור הרשמה למטה */
+.btn-signup {
+    background-color: #8BD6F7;
+    border: 1px solid #6FBCE2;
+    color: #000;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* --- Signup Page Styles --- */
+
+/* כותרת העמוד */
+.signup-title {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 900; /* מודגש מאוד */
+    color: #333;
+}
+
+/* אייקון סימן שאלה ליד התאריך */
+.help-icon {
+    position: absolute;
+    left: 10px; /* הזזה שמאלה כמו בתמונה */
+    top: 12px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: blue !important;
+}
+
+/* כפתור הרשמה תכלת */
+.btn-custom-signup {
+    background-color: #7DD1F0; /* תכלת בהיר */
+    border: 1px solid #999;
+    color: #000;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.btn-custom-signup:hover {
+    background-color: #5bc0de;
+}
+
+/* כפתור חזרה (Back) */
+.back-btn {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.back-btn:hover {
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+/* העיגול סביב החץ */
+.circle-icon {
+    border: 3px solid #000;
+    border-radius: 50%;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 1.2rem;
+    margin: 0 auto; /* מרכוז */
+}
+
+
+/* ================= GENERAL ================= */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4fafd;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        /* ================= NAV ================= */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 30px;
+            border-bottom: 1px solid #e0e0e0;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+
+        nav a {
+            text-decoration: none;
+            font-weight: 600;
+            color: #333;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            color: #0d6efd;
+        }
+
+        /* ================= HEADER ================= */
+        header {
+            background: linear-gradient(180deg, #8fd3f4 0%, #cfeffd 100%);
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .main-title {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+
+        .logo-icon {
+            height: 45px;
+            vertical-align: middle;
+            margin: 0 5px;
+        }
+
+        mark {
+            background-color: rgba(255, 215, 0, 0.3);
+            padding: 0 4px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        /* ================= ACTIVITIES ================= */
+        .activity {
+            background-color: #ffffff;
+            border-radius: 14px;
+            padding: 30px;
+            text-align: center;
+            height: 100%;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .activity:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+        }
+
+        .activity i {
+            font-size: 2.5rem;
+            color: #0d6efd;
+            margin-bottom: 15px;
+        }
+
+        /* ================= NATURE IMAGES ================= */
+        .nature img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 14px;
+            transition: transform 0.4s ease;
+        }
+
+        .nature img:hover {
+            transform: scale(1.05);
+        }
+
+        /* ================= STATISTICS ================= */
+        .statistics h3 {
+            font-size: 2.8rem;
+            color: #0d6efd;
+        }
+
+        /* ================= ASIDE ================= */
+        aside {
+            background-color: #f1f3f5;
+            padding: 40px;
+            border-radius: 14px;
+        }
+
+        /* ================= PARTNERS ================= */
+        .partners img {
+            max-height: 60px;
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+
+        .partners img:hover {
+            filter: grayscale(0);
+            opacity: 1;
+        }
+
+        /* ================= FOOTER ================= */
+        footer {
+            background-color: #0b3c5d;
+            color: #ffffff;
+            text-align: center;
+            padding: 25px;
+
+        }
