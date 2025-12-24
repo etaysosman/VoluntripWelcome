@@ -131,7 +131,6 @@ footer {
     text-align: center;
     padding: 25px;
 }
-
 /* ================= PARTNERS ================= */
 .partners img {
     max-height: 60px;
@@ -147,15 +146,14 @@ footer {
     opacity: 1;
 }
 
-/* התאמה למובייל */
 @media (max-width: 767px) {
     .partners {
         padding: 40px 15px;
     }
     
     .partners img {
-        max-height: 100px; /* תמונות גדולות יותר */
-        max-width: 80%; /* מקסימום 80% מרוחב המסך */
+        max-height: 100px;
+        max-width: 80%;
         margin: 0 auto 25px auto;
     }
     
@@ -172,15 +170,10 @@ footer {
     }
 }
 
-/* מסכים ממש קטנים */
 @media (max-width: 400px) {
     .partners img {
-        max-height: 120px; /* עוד יותר גדול במסכים קטנים */
+        max-height: 120px;
         max-width: 90%;
-    }
-    
-    .partners h3 {
-        font-size: 1.5rem;
     }
 }
 
